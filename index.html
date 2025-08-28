@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- saved from url=(0152)https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/713111f54040e118975fccdb61f29dc3/19252ab2-1529-48ac-90c4-db178ef0474d/index.html -->
-<html lang="zh-HK"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hilti 配送通知系統 - WhatsApp Demo</title>
-    <link rel="stylesheet" href="./Hilti 配送通知系統 - WhatsApp Demo_files/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body data-color-scheme="light">
     <!-- Mobile Container -->
@@ -33,71 +33,11 @@
                 </button>
             </div>
         </header>
-
         <!-- Chat Container -->
         <main class="chat-container">
-            <div class="messages" id="messagesContainer"><div class="message message--received"><div class="message-avatar"><div class="avatar-icon">H</div></div><div class="message-bubble">🚛 Hilti 送貨通知
-您好 陳先生！
-
-您的訂單 #HK240821001 已安排於 2025年8月22日（星期五）送貨：
-
-📋 收貨人：陳先生
-📞 電話：61231234
-📍 地址：香港中環皇后大道中1號
-📅 配送日期：2025年8月22日（星期五）
-⏰ 預計配送時間：08:30-12:00
-📦 貨物清單（請檢查貨物名稱及數量）：查看詳情
-
-請確認上述資料和時間：
-✅ 訂單資料及時間無誤
-請點擊「確認訂單資料及時間無誤」
-
-❌如適合以下情況：
-📅 改期配送
-📞 貨物清單有問題（注意：選擇此項將暫停配送）
-👤 更改收貨人
-請點擊「訂單資料及時間有誤」
-
-⚠️ 若未收到您的回覆，我們會自動安排原定時間送貨。
-
-📱 訂單追蹤請查看：
-Hilti Online → 我的訂單 → 訂單追蹤
-網址：hilti.com.hk/myorders
-
-💬 需要其他協助？WhatsApp客服 Hailey：點擊聯絡
-
-🤖 本訊息由系統自動發送，無法回覆對話<div class="message-buttons"><button class="message-btn">✅ 訂單資料及時間無誤</button><button class="message-btn">❌ 訂單資料及時間有誤</button></div></div></div><div class="message message--received"><div class="message-avatar"><div class="avatar-icon">H</div></div><div class="message-bubble">🚛 Hilti 送貨通知
-您好 陳先生！
-
-您的訂單 #HK240821001 已安排於 2025年8月22日（星期五）送貨：
-
-📋 收貨人：陳先生
-📞 電話：61231234
-📍 地址：香港中環皇后大道中1號
-📅 配送日期：2025年8月22日（星期五）
-⏰ 預計配送時間：08:30-12:00
-📦 貨物清單（請檢查貨物名稱及數量）：查看詳情
-
-請確認上述資料和時間：
-✅ 訂單資料及時間無誤
-請點擊「確認訂單資料及時間無誤」
-
-❌如適合以下情況：
-📅 改期配送
-📞 貨物清單有問題（注意：選擇此項將暫停配送）
-👤 更改收貨人
-請點擊「訂單資料及時間有誤」
-
-⚠️ 若未收到您的回覆，我們會自動安排原定時間送貨。
-
-📱 訂單追蹤請查看：
-Hilti Online → 我的訂單 → 訂單追蹤
-網址：hilti.com.hk/myorders
-
-💬 需要其他協助？WhatsApp客服 Hailey：點擊聯絡
-
-🤖 本訊息由系統自動發送，無法回覆對話<div class="message-buttons"><button class="message-btn">✅ 訂單資料及時間無誤</button><button class="message-btn">❌ 訂單資料及時間有誤</button></div></div></div></div>
-            
+            <div class="messages" id="messagesContainer">
+                <!-- Messages inserted by JavaScript -->
+            </div>
             <!-- Typing Indicator -->
             <div class="typing-indicator hidden" id="typingIndicator">
                 <div class="avatar">
@@ -112,8 +52,7 @@ Hilti Online → 我的訂單 → 訂單追蹤
                 </div>
             </div>
         </main>
-
-        <!-- Input Area - Always Visible -->
+        <!-- Input Area -->
         <div class="input-area" id="inputArea">
             <div class="input-container">
                 <input type="text" class="message-input" id="messageInput" placeholder="輸入訊息...">
@@ -126,7 +65,6 @@ Hilti Online → 我的訂單 → 訂單追蹤
             </div>
         </div>
     </div>
-
     <!-- Popup Modal -->
     <div class="modal hidden" id="popupModal">
         <div class="modal-overlay"></div>
@@ -141,29 +79,12 @@ Hilti Online → 我的訂單 → 訂單追蹤
                 </button>
             </div>
             <div class="modal-body">
-                <div class="option-list" id="optionList"><div class="option-item">
-                <div class="option-emoji">📅</div>
-                <div class="option-content">
-                    <div class="option-title">需要改期配送</div>
-                    <div class="option-description">重新安排配送日期</div>
+                <div class="option-list" id="optionList">
+                    <!-- Options inserted by JavaScript -->
                 </div>
-            </div><div class="option-item">
-                <div class="option-emoji">📞</div>
-                <div class="option-content">
-                    <div class="option-title">貨物清單有問題</div>
-                    <div class="option-description">注意：選擇此項將暫停配送</div>
-                </div>
-            </div><div class="option-item">
-                <div class="option-emoji">👤</div>
-                <div class="option-content">
-                    <div class="option-title">更改收貨人</div>
-                    <div class="option-description">修改收貨人姓名或電話</div>
-                </div>
-            </div></div>
             </div>
         </div>
     </div>
-
-    <script src="./Hilti 配送通知系統 - WhatsApp Demo_files/app.js.download"></script>
-
-</body></html>
+    <script src="app.js"></script>
+</body>
+</html>
